@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Logic - Category - Thomas Bishop</title>
+        <link>https://www.thomas-bishop.co.uk/categories/logic/</link>
+        <description>Logic - Category - Thomas Bishop</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 27 Nov 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.thomas-bishop.co.uk/categories/logic/" rel="self" type="application/rss+xml" /><item>
+    <title>Informal definitions of key concepts in propositional logic</title>
+    <link>https://www.thomas-bishop.co.uk/posts/informal-definitions-propositional-logic/</link>
+    <pubDate>Sat, 27 Nov 2021 00:00:00 &#43;0000</pubDate><guid>https://www.thomas-bishop.co.uk/posts/informal-definitions-propositional-logic/</guid>
+    <description><![CDATA[This post is the first of a series on propositional logic that introduces the foundational logical concepts of validity, soundness, truth, falsity, possibility and indeterminacy. These concepts are defined here informally and will receive formal articulation in later posts.
+What is propositional logic? The chief unit of propositional logic is the proposition. It is typically said that the sentences of a language express propositions. Thus, in natural languages, propositions are expressed via declarative sentences: a statement that such and such is the case.]]></description>
+</item>
+</channel>
+</rss>

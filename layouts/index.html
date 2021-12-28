@@ -1,0 +1,162 @@
+{{- define "content" -}} {{- $params := .Scratch.Get "params" -}} {{- $profile
+:= .Site.Params.home.profile -}} {{- $posts := .Site.Params.home.posts -}}
+
+<div
+  class="page archive home-block"
+  {{
+  if
+  ne
+  $posts.enable
+  false
+  }}
+  data-home="posts"
+  {{
+  end
+  }}
+>
+  <div class="home welcome">
+    <div class="text-block">
+      <h1>Hi, I'm Thomas</h1>
+      <p>
+        I’m a software engineer from London living in Aberdeen. I work for an AI
+        company that provides solutions using natural language generation.
+      </p>
+      <p>I write about my projects, learning and technical preoccupations.</p>
+    </div>
+    <div class="portrait-wrapper">
+      <img src="/site-image.svg" alt="" class="portrait" />
+    </div>
+  </div>
+
+  <div class="home-block post-preview">
+    <h2 class="home-block--header">Recent posts</h2>
+    {{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
+    <div class="home-block--item">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <div class="post-date">{{ .Date | time.Format ":date_long" }}</div>
+    </div>
+    {{end}}
+  </div>
+
+  <div class="home-block projects">
+    <h2 class="home-block--header">Projects</h2>
+    <div class="home-block--item project">
+      <a
+        href="https://github.com/thomasabishop/alien-blood-vscode"
+        target="_blank"
+        >Alien Blood VS Code</a
+      >
+      <p>A syntax theme for VS Code inspired by the terminal colour scheme.</p>
+    </div>
+    <div class="home-block--item project">
+      <a href="https://github.com/thomasabishop/sinequanon" target="_blank"
+        >Sine Qua Non</a
+      >
+      <p>
+        Node.js, Webpack and Gulp-based boilerplate used as a foundation for
+        static sites and simple applications.
+      </p>
+    </div>
+    <div class="home-block--item project">
+      <a href="https://adoring-nobel-48c925.netlify.app/" target="_blank"
+        >Total cost of ventilator ownership calculator</a
+      >
+      <p>
+        A React web application which enables hospital procurement
+        administrators to calculate the total unit and running costs of a
+        specific model of oxygen ventilator accross the seven-year lifecycle of
+        the device.
+      </p>
+    </div>
+    <div class="home-block--item project">
+      <a href="https://friendly-yonath-81b31c.netlify.app/" target="_blank"
+        >Ventilation parameters calculation tool</a
+      >
+      <p>
+        A JavaScript web application which allows patients using a range of
+        at-home ventilators to accurately titrate their oxygen intake in line
+        with their physician's recommendations and medical requirements.
+      </p>
+    </div>
+    <div class="home-block--item project">
+      <a href="https://thomas-angular-learning-lab.netlify.app/" target="_blank"
+        >Angular Learning Lab</a
+      >
+      <p>
+        Environment for learning and practising routine operations in Angular.
+      </p>
+    </div>
+  </div>
+
+  <div class="employment home-block">
+    <h2 class="home-block--header">Employment</h2>
+    <div class="home-block--item employment">
+      <span class="job-title">Software Engineer</span><br />
+      <a href="https://www.arria.com/" target="_blank"
+        >Arria Natural Language Generation</a
+      ><br />
+      <span class="dates">2021-present</span><br />
+      <p>
+        I work as part of the frontend team on NLG Studio, Arria's flagship
+        software. Arria NLG Studio converts complex structured data into natural
+        language narratives and is primarily used as an API for automated
+        technical reporting. I work with TypeScript and Angular.
+      </p>
+    </div>
+    <div class="home-block--item employment">
+      <span class="job-title">Assistant Web Developer</span><br />
+      <a href="https://www.bdcdesign.com/" target="_blank"
+        >Blueprint Design Company</a
+      ><br />
+      <span class="dates">2019-2021</span><br />
+      <p>
+        Whilst at BDC I worked as the lead frontend developer using vanilla
+        JavaScript and React, along with other standard web technologies and
+        tooling. I worked closely with graphic and UX designers to produce
+        single page applications primarily for large global health technology
+        providers, most notably Philips.
+      </p>
+    </div>
+  </div>
+  <div class="home-block freelance">
+    <h2 class="home-block--header">Freelance</h2>
+    <div class="home-block--item">
+      <a
+        href="https://makingafricanconnections.org/s/archive/page/index"
+        target="_blank"
+        >University of Sussex</a
+      ><br />
+      <p>
+        I was hired by the University of Sussex's Digital Humanities Lab to
+        customise the Making African Connections Digital Archive, an AHRC-funded
+        research project. This involved frontend alterations and the creation of
+        several backend processes designed to assist the researchers in managing
+        content. I primarily worked with PHP, MySQL, and JavaScript.
+      </p>
+    </div>
+    <div class="home-block--item">
+      <a href="https://www.nuance.com/en-gb/index.html" target="_blank"
+        >Nuance Communications</a
+      ><br />
+      <p>
+        Nuance are one of the leading developers of AI-driven speech-recognition
+        technology. I worked with Nuance to produce landing pages and other web
+        content for marketing campaigns. Involved refactoring the existing
+        frontend code and using JavaScript to automate page behaviour on the
+        basis of date/time and tracking codes contained within the inbound
+        marketing URLs.
+      </p>
+    </div>
+    <div class="home-block--item">
+      <a href="https://www.clareshort.org" target="_blank"
+        >Rt Hon. Clare Short</a
+      ><br />
+      <p>
+        Clare Short is Britain's former Secretary of State for International
+        Development. I rebuilt Clare's professional website from a static legacy
+        site to a modern site backed with WordPress.
+      </p>
+    </div>
+  </div>
+</div>
+{{- end -}}

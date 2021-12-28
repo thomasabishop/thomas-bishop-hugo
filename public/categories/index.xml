@@ -1,0 +1,19 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Categories - Category - Thomas Bishop</title>
+        <link>https://www.thomas-bishop.co.uk/categories/</link>
+        <description>Categories - Category - Thomas Bishop</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 19 Dec 2021 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://www.thomas-bishop.co.uk/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Personal</title>
+    <link>https://www.thomas-bishop.co.uk/categories/personal/</link>
+    <pubDate>Sun, 19 Dec 2021 00:00:00 &#43;0000</pubDate><guid>https://www.thomas-bishop.co.uk/categories/personal/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Logic</title>
+    <link>https://www.thomas-bishop.co.uk/categories/logic/</link>
+    <pubDate>Sat, 27 Nov 2021 00:00:00 &#43;0000</pubDate><guid>https://www.thomas-bishop.co.uk/categories/logic/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

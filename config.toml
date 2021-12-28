@@ -1,0 +1,91 @@
+baseURL = "https://www.thomas-bishop.co.uk/"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+# language code
+languageCode = "en"
+title = "Thomas Bishop"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "FeelIt"
+
+[params]
+  # FeelIt theme version
+  version = "1.0.X"
+  description = "Software engineer based in Aberdeen, Scotland."
+  gitRepo = ""
+  dateFormat = "2006-01-02"
+    [params.pwa]
+        enable = false
+    [params.header]
+        desktopMode = "fixed"
+        mobileMode = "auto"
+        [params.header.title]
+            name = "Thomas Bishop" 
+            logo = "/site-image.svg" 
+            rss = true
+    [params.footer]
+        enable = false        
+    [params.section]
+        dateFormat = "02-01-2006"
+    [params.list]
+        dateFormat = "02-01-2006"
+    [params.social]
+        GitHub = "https://github.com/thomasabishop"
+    [params.page]
+        [params.page.math]
+            enable = true
+        [params.page.code]
+            copy = true
+            
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    pre = ""
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 3
+  [[menu.main]]
+    identifier = "github"
+    pre = "<i class='fab fa-github fa-fw'></i>"
+    post = ""
+    name = ""
+    url = "https://github.com/thomasabishop"
+    title = "GitHub"
+    weight = 4
+[[menu.main]]
+    identifier = "instagram"
+    pre = "<i class='fab fa-instagram fa-fw'></i>"
+    post = ""
+    name = ""
+    url = "https://www.instagram.com/thomasbishopdvlpr/"
+    title = "Instagram"
+    weight = 4
+
+
+
+# Markup related configuration in Hugo
+[markup]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true

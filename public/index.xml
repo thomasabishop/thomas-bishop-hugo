@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Thomas Bishop</title>
+        <link>https://www.thomas-bishop.co.uk/</link>
+        <description>Software engineer based in Aberdeen, Scotland.</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 19 Dec 2021 00:00:00 &#43;0000</lastBuildDate>
+            <atom:link href="https://www.thomas-bishop.co.uk/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Books I read in 2021</title>
+    <link>https://www.thomas-bishop.co.uk/posts/books-read-2021/</link>
+    <pubDate>Sun, 19 Dec 2021 00:00:00 &#43;0000</pubDate><guid>https://www.thomas-bishop.co.uk/posts/books-read-2021/</guid>
+    <description><![CDATA[Non-fiction What Kind of Creatures Are We? Noam Chomsky (2015) An engrossing synoptic account of the main currents in Chomsky&rsquo;s thinking across his long career. He starts with his contributions to linguistics, moving into the theory of knowledge and ends with reflections on the limits of human understanding and the role and nature of scientific explanation.There is also a chapter discussing the extent to which his linguistic theories and Cartesian orientation in the philosophy of mind influences his libertarian-socialist politics.]]></description>
+</item>
+<item>
+    <title>Informal definitions of key concepts in propositional logic</title>
+    <link>https://www.thomas-bishop.co.uk/posts/informal-definitions-propositional-logic/</link>
+    <pubDate>Sat, 27 Nov 2021 00:00:00 &#43;0000</pubDate><guid>https://www.thomas-bishop.co.uk/posts/informal-definitions-propositional-logic/</guid>
+    <description><![CDATA[This post is the first of a series on propositional logic that introduces the foundational logical concepts of validity, soundness, truth, falsity, possibility and indeterminacy. These concepts are defined here informally and will receive formal articulation in later posts.
+What is propositional logic? The chief unit of propositional logic is the proposition. It is typically said that the sentences of a language express propositions. Thus, in natural languages, propositions are expressed via declarative sentences: a statement that such and such is the case.]]></description>
+</item>
+</channel>
+</rss>
