@@ -32,8 +32,7 @@
     <h2 class="home-block--header">Recent posts</h2>
     {{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
     <div class="home-block--item">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-      <div class="post-date">{{ .Date | time.Format ":date_long" }}</div>
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
     </div>
     {{end}}
   </div>

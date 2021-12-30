@@ -1,0 +1,256 @@
+// ==============================
+// Custom styles
+// ==============================
+
+// ==========================================================================
+
+/*
+* Layout
+*/
+
+body,
+.container,
+.main,
+.footer {
+  background-color: $global-background-color;
+  [theme="dark"] & {
+    background-color: $global-background-color-dark;
+  }
+}
+
+header {
+  background-color: $header-background-color;
+  border-bottom: 1px solid $global-border-color;
+  [theme="dark"] & {
+    background-color: $header-background-color-dark;
+    border-bottom: 1px solid $global-border-color-dark;
+  }
+  .header-title a {
+    font-size: 1.2rem;
+  }
+  .header-title img {
+    margin-right: 5px;
+    margin-bottom: -2px;
+  }
+}
+
+#header-mobile .header-container .menu {
+  background-color: $header-background-color;
+  border-top: 1px solid $global-border-color;
+  [theme="dark"] & {
+    background-color: $header-background-color-dark;
+    border-top: 1px solid $global-border-color-dark;
+  }
+}
+
+.single-card,
+.archive .categories-card .card-item {
+  background-color: $global-background-card-color;
+  [theme="dark"] & {
+    background-color: $global-background-card-color-dark;
+  }
+}
+
+.single-card > h1 {
+  margin-bottom: 1rem !important;
+}
+
+// ==========================================================================
+
+/*
+* Typography
+*/
+
+html {
+  line-height: 1.625;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: $global-font-color;
+  [theme="dark"] & {
+    color: $global-font-color-dark;
+  }
+}
+
+h1 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-block-end: 0 !important;
+}
+
+h2.single-title {
+  border-bottom: none;
+}
+
+a:hover,
+a:active {
+  color: $global-link-hover-color;
+}
+
+[theme="dark"] a:hover,
+a:active {
+  color: $global-link-hover-color;
+}
+
+.single .content a,
+.post-meta .post-category a,
+.archive .categories-item-link:hover,
+.archive .tag-cloud-tags a:hover,
+.archive .item-link:hover,
+.archive .tem .item-link:hover {
+  color: $global-link-hover-color;
+  [theme="dark"] & {
+    color: $global-link-hover-color;
+  }
+}
+
+.single .content a:active,
+.single .content a:hover {
+  color: $single-link-hover-color;
+  [theme="dark"] & {
+    color: $single-link-hover-color;
+  }
+}
+
+.post-meta .post-category a:hover {
+  color: $single-link-hover-color;
+  [theme="dark"] & {
+    color: $single-link-hover-color;
+  }
+}
+
+#toc-auto .toc-content a.active,
+#toc-auto .toc-content a.active::before,
+#toc-auto .toc-content a::before {
+  color: $global-link-hover-color;
+  [theme="dark"] & {
+    color: $global-link-hover-color;
+  }
+}
+
+// ==========================================================================
+
+/*
+* Homepage.
+*/
+
+.welcome {
+  margin-top: 1rem;
+  background: white;
+  border-radius: 6px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  [theme="dark"] & {
+    background: $global-background-card-color-dark;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .text-block {
+    width: 100%;
+    @media (max-width: 768px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .portrait-wrapper {
+    margin-left: 1rem;
+  }
+  .portrait {
+    width: 140px;
+    @media (max-width: 768px) {
+      width: 120px;
+      padding-top: 1rem;
+    }
+  }
+}
+
+.home-block {
+  margin-bottom: 2rem;
+  &--header {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $global-border-color;
+    [theme="dark"] & {
+      border-bottom: 2px solid $global-border-color-dark;
+    }
+  }
+  &--item {
+    a {
+      font-weight: bold;
+      color: $global-link-hover-color;
+      &:hover {
+        color: $single-link-hover-color;
+      }
+    }
+  }
+  .dates {
+    font-style: italic;
+  }
+  .post-date {
+    margin-bottom: 1rem;
+  }
+}
+
+// ==========================================================================
+
+/*
+* Content removals
+*/
+
+.single .post-meta .author {
+  display: none;
+}
+
+.single .single-title {
+  animation-duration: 0s;
+  -webkit-animation-duration: 0s;
+}
+
+a.header-mark,
+.header-mark {
+  display: none;
+}
+
+hr {
+  border-top: 1px solid $global-border-color;
+  border-bottom: none;
+  [theme="dark"] & {
+    border-top-color: $global-border-color-dark;
+  }
+}
+
+h2,
+.archive .categories-card .card-item .card-item-wrapper .card-item-title {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $global-border-color;
+  [theme="dark"] & {
+    border-bottom: 1px solid $global-border-color-dark;
+  }
+}
+
+.single .content blockquote {
+  border-left: none;
+}
+
+.header {
+  transition: none !important;
+}
+
+header:hover {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
