@@ -28,14 +28,14 @@
     </div>
   </div>
 
-  <div class="home-block post-preview">
+  <!-- <div class="home-block post-preview">
     <h2 class="home-block--header">Recent posts</h2>
     {{ range ( where .Site.RegularPages "Type" "posts" | first 3 ) }}
     <div class="home-block--item">
       <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
     </div>
     {{end}}
-  </div>
+  </div> -->
 
   <div class="home-block projects">
     <h2 class="home-block--header">Projects</h2>
@@ -47,6 +47,10 @@
       >
       <p>A syntax theme for VS Code inspired by the terminal colour scheme.</p>
     </div>
+  </div>
+
+  <div class="home-block projects">
+    <h2 class="home-block--header">Other projects</h2>
     <div class="home-block--item project">
       <a href="https://github.com/thomasabishop/sinequanon" target="_blank"
         >Sine Qua Non</a

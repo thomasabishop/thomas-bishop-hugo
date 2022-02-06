@@ -2,7 +2,7 @@
 date: 2021-12-19
 title: "Test styles"
 author: null
-draft: true
+draft: false
 math: true
 ---
 

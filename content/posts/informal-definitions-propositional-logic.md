@@ -5,7 +5,7 @@ categories: ["Logic"]
 tags: ["propositional logic"]
 ---
 
-> This post is the first of a series on propositional logic that introduces the foundational logical concepts of validity, soundness, truth, falsity, possibility and indeterminacy. These concepts are defined here informally and will receive formal articulation in later posts.
+This post is the first of a series on propositional logic that introduces the foundational logical concepts of validity, soundness, truth, falsity, possibility and indeterminacy. These concepts are defined here informally and will receive formal articulation in later posts.
 
 ## What is propositional logic?
 

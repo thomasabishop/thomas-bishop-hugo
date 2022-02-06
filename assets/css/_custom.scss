@@ -103,7 +103,7 @@ h1 {
 
 .toc .toc-title {
   font-weight: 400;
-  letter-spacing: 1px;
+  //letter-spacing: 1px;
   font-size: 0.875rem;
 }
 
@@ -171,7 +171,7 @@ a:active {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   margin-bottom: 2rem;
   [theme="dark"] & {
     background: $global-background-card-color-dark;
@@ -229,6 +229,10 @@ a:active {
   }
 }
 
+.job-title {
+  font-weight: bold;
+}
+
 // ==========================================================================
 
 /*
@@ -276,4 +280,17 @@ h2,
 header:hover {
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
+}
+
+.single-card,
+.archive .categories-card .card-item {
+  box-shadow: none;
+}
+
+// #header-mobile .header-container .menu {
+//   border-top: none;
+// }
+
+#mask {
+  background-color: rgba(0, 0, 0, 0) !important;
 }
